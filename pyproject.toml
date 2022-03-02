@@ -1,0 +1,52 @@
+[tool.briefcase]
+project_name = "Easy Music"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://example.com/easymusic"
+license = "Proprietary"
+author = 'Samuel Walls'
+author_email = "samuel@example.com"
+
+[tool.briefcase.app.easymusic]
+formal_name = "Easy Music"
+description = "App for downloading music from YT playlists"
+icon = "src/easymusic/resources/easymusic"
+sources = ['src/easymusic']
+requires = [
+]
+
+
+[tool.briefcase.app.easymusic.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev32',
+    'std-nslog==1.0.0'
+]
+
+[tool.briefcase.app.easymusic.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev32',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.easymusic.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev32',
+]
+
+# Mobile deployments
+[tool.briefcase.app.easymusic.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev32',
+    'std-nslog==1.0.0'
+]
+
+[tool.briefcase.app.easymusic.android]
+requires = [
+    'toga-android>=0.3.0.dev32'
+]

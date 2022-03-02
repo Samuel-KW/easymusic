@@ -1,0 +1,4 @@
+pafy
+colorama
+youtube-dl
+mutagen
