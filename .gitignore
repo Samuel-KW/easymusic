@@ -1,3 +1,5 @@
+# Ignore replit files
+.replit
 
 # Ignore youtube takeout files
 Takeout/
